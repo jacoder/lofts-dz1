@@ -1,0 +1,21 @@
+{
+  "name": "dz1",
+  "version": "1",
+  "authors": [
+  ],
+  "description": "homework #1 for Loftschool-web-092015",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "jacoder.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
