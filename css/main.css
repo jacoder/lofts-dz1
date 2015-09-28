@@ -1,48 +1,3 @@
-html {
-    position: relative;
-    min-height: 100%;
-
-}
-body{
-  background-image: url(../img/comppattern2.png);
-  margin: 0 0 78px; /* bottom = footer height */
-  text-align: left;
-  font-style: normal;
-}
-header{
-   background-color: #eff3f7;
-
-   height: 116px;
-}
-
-footer{
-  position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 78px;
-    width: 100%;
-    font-size: 13px;
-    font-family: "Fira Sans Light";
-    color: rgb(74, 84, 93);
-    line-height: 1.2;
-    text-align: center;
-}
-
-aside{
-  word-break: break-all;
-}
-
-footer::before{   /*? не сработл*/
-  content: '';
-  background-image: -moz-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
-  position: absolute;
-  width: 100%;
-  height: 3px;
-
-}
-
 /*Fonts*/
 @font-face {
   font-family: 'ProximaNova';
@@ -58,7 +13,7 @@ footer::before{   /*? не сработл*/
   src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/firasans-book.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/firasans-book.ttf')  format('truetype') /* Safari, Android, iOS */
-       ; /* Legacy iOS */
+       ;
 }
 @font-face {
   font-family: 'Fira Sans Light';
@@ -66,15 +21,82 @@ footer::before{   /*? не сработл*/
   src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/firasans-light.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/firasans-light.ttf')  format('truetype') /* Safari, Android, iOS */
-       ; /* Legacy iOS */
+       ;
 }
+
+/* General & body*/
+html {
+    position: relative;
+    min-height: 100%;
+
+}
+body{
+  background-image: url(../img/comppattern2.png);
+  margin: 0 0 78px; /* bottom = footer height */
+  text-align: left;
+  font-style: normal;
+}
+
+
+/* HEADER */
+header{
+   background-color: #eff3f7;
+   height: 116px;
+}
+
+/* SIDEBAR */
+
+aside{
+  word-break: break-all;
+}
+
 
 .social{
     display: inline-block;
 }
 
 
-
 .contacts h5{
   background-color:#3ba8c0;
+}
+
+.contactsList>li {
+  cursor: pointer;
+}
+
+/* MAIN CONTENT */
+
+/* FOOTER */
+
+footer{
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 78px;
+    width: 100%;
+    font-size: 13px;
+    font-family: "Fira Sans Light";
+    color: rgb(74, 84, 93);
+    line-height: 1.2;
+    text-align: center;
+}
+
+/*
+.logged_in:{
+    background: url(images/logged.png);
+}
+.logged_out{
+    background: url(images/unlogged.png);
+}
+*/
+
+footer::before, header::after{
+  content: '';
+  background-image: -moz-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  position: absolute;
+  width: 100%;
+  height: 3px;
+
 }
