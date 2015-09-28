@@ -16,8 +16,8 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
 
-<!-- Modernizer -->
-<script src="bower_components/modernizer/modernizr.js"></script>
+  <!-- Modernizer -->
+  <script src="bower_components/modernizer/modernizr.js"></script>
 
 
   <!-- FavIcons -->
@@ -44,10 +44,10 @@
 
 <body>
   <!--[if lt IE 7]>
-    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
   <![endif]-->
 
-<!-- /* HEADER */ -->
+  <!-- /* HEADER */ -->
   <header>
     <figure class="logo">
       <a href="http://www.loftschool.com" target="_blank">
@@ -74,7 +74,7 @@
   </header>
 
 
-<!-- /* SIDEBAR */ -->
+  <!-- /* SIDEBAR */ -->
 
   <aside class="sidebar">
     <nav class="side-nav">
@@ -97,11 +97,34 @@
   </aside>
 
 
-<!-- /* MAIN CONTENT */ -->
-  <main class="main">
+  <!-- /* MAIN CONTENT */ -->
+  <main class="main clearfix">
 
     <article class="basic">
       <h3>Основная информация</h3>
+    <figure class="photo">
+      <img src="./img/photo.jpg" alt="моё фото" />
+    </figure>
+  <dl class="wrap-basic-info">
+      <dt>Меня зовут</dt>
+      <dd>Леонтьев Олег</dd>
+      <dt>Мой возраст</dt>
+      <dd>35 лет</dd>
+      <dt>Мой город</dt>
+      <dd>Самара</dd>
+      <dt>Моя специализация</dt>
+      <dd>Frontend разработчик</dd>
+      <dt>Ключевые навыки</dt>
+      <dd>
+        <ul class="skills">
+          <li>html</li>
+          <li>css</li>
+          <li>javascript</li>
+          <li>git</li>
+        </ul>
+
+      </dd>
+</dl>
 
 
     </article>
@@ -118,25 +141,36 @@
       </ul>
     </article>
 
-
+    <article id="education">
+      <h3>Образование</h3>
+      <ul>
+        <li>
+          <span class="firm">ПовГАТИ</span>
+          <!-- &mdash; -->
+          <div class="timespan">1997 &ndash; 2002</div>
+        </li>
+        <li></li>
+      </ul>
+    </article>
   </main>
 
 
 
 
-<!-- /* FOOTER */ -->
+  <!-- /* FOOTER */ -->
 
   <footer>
-    <figure>
-      <a href="#">
-        <img src="./img/unlogged.png" alt="" />
-      </a>
-    </figure>
+
+    <!-- <figure> -->
+    <a id="login_link" href="login.php" title="Админка">
+      <!-- <img src="./img/unlogged.png" alt="Админка ;)" /> -->
+    </a>
+    <!-- </figure> -->
     <small>&copy; 2015 Это мой сайт, пожалуйста, не копируйте его</small>
   </footer>
 
 </body>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="js/main.js"></script>
 
 </html>
