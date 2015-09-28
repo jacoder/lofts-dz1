@@ -2,6 +2,7 @@
   "name": "loftschool-dz1",
   "version": "0.0.1",
   "devDependencies": {
+    "browser-sync": "^2.9.6",
     "gulp": "^3.9.0",
     "gulp-concat-css": "^2.2.0",
     "gulp-connect": "^2.2.0",
