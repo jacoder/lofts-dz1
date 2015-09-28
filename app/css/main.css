@@ -51,9 +51,17 @@ ul {
   padding: 0;*/
   list-style: none;
 }
-.clearfix:before, .clearfix:after {content:"";display:table;}
-.clearfix:after {clear:both;}
-.clearfix {zoom:1; /* Хак для IE 6 и 7 */}
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+  /* Хак для IE 6 и 7 */
+}
 
 /* HEADER */
 
@@ -63,6 +71,12 @@ header {
 }
 .logo {
   top: 39px;
+  display: inline;
+}
+nav.social {
+  position: absolute;
+  right: 0;
+  top: 36px;
 }
 .social>ul {
   width: 213px;
@@ -81,7 +95,6 @@ aside {
 .sidebar {
   width: 250px;
   float: left;
-
 }
 .contacts h5 {
   background-color: #3ba8c0;
@@ -91,7 +104,8 @@ aside {
 }
 
 /* MAIN CONTENT */
-main{
+
+main {
   width: 960px;
   margin: 39px auto 39px;
 }
@@ -102,6 +116,7 @@ main>article {
   margin-bottom: 27px;
   margin-left: 0;
   margin-right: auto;
+  color: #4a545d;
 }
 main>article h3 {
   font-size: 27px;
