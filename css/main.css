@@ -35,26 +35,49 @@ body{
   margin: 0 0 78px; /* bottom = footer height */
   text-align: left;
   font-style: normal;
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  /*margin: 0;
+  padding: 0;*/
+  list-style: none;
 }
 
 
 /* HEADER */
+
 header{
    background-color: #eff3f7;
    height: 116px;
 }
 
+.logo{
+  top: 39px;
+}
+
+.social>ul {
+    width: 213px;
+}
+.social li{
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
 /* SIDEBAR */
 
 aside{
   word-break: break-all;
 }
 
-
-.social{
-    display: inline-block;
+.sidebar{
+  	width: 250px;
+  	float: left;
 }
-
 
 .contacts h5{
   background-color:#3ba8c0;
@@ -65,6 +88,22 @@ aside{
 }
 
 /* MAIN CONTENT */
+
+main>article{
+  background: #eff3f7;
+}
+main>article h3{
+  font-size: 27px;
+  font-family: "Fira Sans Book";
+  color: rgb(59, 168, 192);
+  padding-left: 22px;
+}
+
+main>article h3::after{
+
+}
+
+
 
 /* FOOTER */
 
