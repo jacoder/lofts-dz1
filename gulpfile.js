@@ -5,8 +5,7 @@ var notify= require('gulp-notify');
 var connect= require('gulp-connect');
 var minifyCSS= require('gulp-minify-css');
 var liveReload= require('gulp-livereload');
-
-
+var browserSync=reuire('browser-sync');
 
 gulp.task('connect',function(){
   connect.server({
@@ -16,6 +15,14 @@ gulp.task('connect',function(){
   } )
 })
 
+gulp.task('server',function(){
+  browserSync({
+    port:9000,
+    server:{
+      baseDir:'app'
+    }
+  });
+});
 
 gulp.task('css',function(){
   gulp.src('css/*.css')
