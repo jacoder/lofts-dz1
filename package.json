@@ -1,6 +1,6 @@
 {
   "name": "loftschool-dz1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "browser-sync": "^2.9.6",
     "gulp": "^3.9.0",

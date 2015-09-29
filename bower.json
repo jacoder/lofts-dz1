@@ -1,7 +1,7 @@
 {
   "name": "dz1",
   "version": "1",
-  "authors": [],
+  "authors": ["Oleg Leontiev"],
   "description": "homework #1 for Loftschool-web-092015",
   "main": "index.html",
   "license": "MIT",
