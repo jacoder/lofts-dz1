@@ -36,12 +36,13 @@ html {
   min-height: 100%;
 }
 body {
-  background-image: url(../img/comppattern2.png);
+  background: url(../img/comppattern2.png) repeat;
   margin: 0 0 78px;
   /* bottom = footer height */
   text-align: left;
   font-style: normal;
   max-width: 1200px;
+    color: #4a545d;
 }
 a {
   text-decoration: none;
@@ -87,6 +88,10 @@ nav.social {
   height: 46px;
 }
 
+.social li.vk{
+  background-image: url();
+}
+
 /* SIDEBAR */
 
 aside {
@@ -95,6 +100,7 @@ aside {
 .sidebar {
   width: 250px;
   float: left;
+  /*clear: right;*/
 }
 .contacts h5 {
   background-color: #3ba8c0;
@@ -108,6 +114,8 @@ aside {
 main {
   width: 960px;
   margin: 39px auto 39px;
+  float: right;
+
 }
 main>article {
   background: #eff3f7;
@@ -116,7 +124,7 @@ main>article {
   margin-bottom: 27px;
   margin-left: 0;
   margin-right: auto;
-  color: #4a545d;
+
 }
 main>article h3 {
   font-size: 27px;
