@@ -109,6 +109,9 @@ aside {
   cursor: pointer;
 }
 
+address{
+  display: block;
+}
 /* MAIN CONTENT */
 
 main {

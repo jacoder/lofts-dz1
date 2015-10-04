@@ -3,9 +3,11 @@ var concatCSS = require('gulp-concat-css');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
 var connect = require('gulp-connect');
-var minifyCSS = require('gulp-minify-css');
+var minifyCSS = require('gulp-minify-css'); // css minification
 var liveReload = require('gulp-livereload');
 var browserSync = require('browser-sync');
+var useref=require('gulp-useref');
+
 
 gulp.task('connect', function() {
   connect.server({
@@ -24,6 +26,9 @@ gulp.task('server', function() {
   });
 });
 
+
+//// Build
+
 gulp.task('css', function() {
   gulp.src('app/css/*.css')
     .pipe(concatCSS("bundle.css"))
@@ -39,6 +44,8 @@ gulp.task('css', function() {
 })
 
 gulp.task('html', function() {
+  var assets=useref.assets();
+
     gulp.src('index.html')
       .pipe(connect.reload())
   }
