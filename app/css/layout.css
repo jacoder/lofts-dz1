@@ -1,4 +1,94 @@
+.page {
+    position: relative; /**ja  let contain absolute-positioned elements */
+}
 
-footer {
-  position: absolute;
+
+/** HEADER **/
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 116px;
+    width: 100%;
+}
+
+
+.middle-wrap{
+        top: 117;
+        width: 100%;
+
+    position: absolute;
+    margin:  0 auto;
+        /*position: relative; /!**ja  let contain absolute-positioned elements *!/*/
+    padding-left: 250px;
+}
+
+
+/** SIDEBAR **/
+
+.sidebar {
+
+    /*background-color: #006600;*/
+    width: 250px;
+    /*float: left;*/
+    /*clear: right;*/
+}
+
+
+.side-nav{
+    margin: 5px; /**ja todo fix to real */
+}
+
+.sidebar-contacts{
+
+}
+
+
+/** MAIN CONTENT **/
+
+.main {
+    width: 960px;
+    /*margin: 39px auto 39px;*/
+    /*float: right;*/
+
+}
+
+
+/** FOOTER **/
+.page-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 78px;
+    width: 100%;
+}
+
+
+.admin_door {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    width: 22px;
+    height: 32px;
+
+}
+
+.login_link {
+
+
+}
+
+/** UTILITIES **/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+    /* Хак для IE 6 и 7 */
 }

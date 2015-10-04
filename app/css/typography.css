@@ -1,0 +1,41 @@
+/*Fonts*/
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proximanovacond-semibold-webfont.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/proximanovacond-semibold-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Fira Sans Book';
+  src: url('../fonts/firasans-book.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/firasans-book.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/firasans-book.ttf') format('truetype')/* Safari, Android, iOS */
+  ;
+}
+@font-face {
+  font-family: 'Fira Sans Light';
+  src: url('../fonts/firasans-light.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/firasans-light.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/firasans-light.ttf') format('truetype')/* Safari, Android, iOS */
+  ;
+}
+
+
+
+
+
+.page-footer {
+    font-size: 13px;
+    font-family: "Fira Sans Light";
+    color: rgb(74, 84, 93);
+
+}

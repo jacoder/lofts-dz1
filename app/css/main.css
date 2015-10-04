@@ -1,205 +1,170 @@
-/*Fonts*/
-
-@font-face {
-  font-family: 'ProximaNova';
-  src: url('../fonts/proximanovacond-semibold-webfont.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/proximanovacond-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/proximanovacond-semibold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/proximanovacond-semibold-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-@font-face {
-  font-family: 'Fira Sans Book';
-  src: url('../fonts/firasans-book.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/firasans-book.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/firasans-book.ttf') format('truetype')/* Safari, Android, iOS */
-  ;
-}
-@font-face {
-  font-family: 'Fira Sans Light';
-  src: url('../fonts/firasans-light.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/firasans-light.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/firasans-light.ttf') format('truetype')/* Safari, Android, iOS */
-  ;
-}
-
 /* General & body*/
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
+
 body {
-  background: url(../img/comppattern2.png) repeat;
-  margin: 0 0 78px;
-  /* bottom = footer height */
-  text-align: left;
-  font-style: normal;
-  max-width: 1200px;
+    background: url(../img/comppattern2.png) repeat;
+    margin: 0 0 78px;
+    /* bottom = footer height */
+    text-align: left;
+    font-style: normal;
+    max-width: 1200px;
     color: #4a545d;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 ul {
-  /*margin: 0;
-  padding: 0;*/
-  list-style: none;
+    /*margin: 0;
+    padding: 0;*/
+    list-style: none;
 }
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  zoom: 1;
-  /* Хак для IE 6 и 7 */
-}
+
+
 
 /* HEADER */
 
-header {
-  background-color: #eff3f7;
-  height: 116px;
-}
-.logo {
-  top: 39px;
-  display: inline;
-}
-nav.social {
-  /*position: absolute;*/
-  right: 0;
-  top: 36px;
-}
-.social>ul {
-  width: 213px;
-}
-.social li {
-  display: inline-block;
-  width: 46px;
-  height: 46px;
+.page-header {
+    background-color: #eff3f7;
 }
 
-.social li.vk{
-  background-image: url();
+.logo {
+    top: 39px;
+    display: inline;
+}
+
+nav.social {
+    /*position: absolute;*/
+    right: 0;
+    top: 36px;
+}
+
+.social > ul {
+    width: 213px;
+}
+
+.social li {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+}
+
+.social li.vk {
+    background-image: url();
 }
 
 /* SIDEBAR */
 
 aside {
-  word-break: break-all;
-}
-.sidebar {
-  width: 250px;
-  float: left;
-  /*clear: right;*/
-}
-.contacts h5 {
-  background-color: #3ba8c0;
-}
-.contactsList>li {
-  cursor: pointer;
+    word-break: break-all;
 }
 
-address{
-  display: block;
+
+.contacts h5 {
+    background-color: #3ba8c0;
 }
+
+.contactsList > li {
+    cursor: pointer;
+}
+
+address {
+    display: block;
+}
+
 /* MAIN CONTENT */
 
-main {
-  width: 960px;
-  margin: 39px auto 39px;
-  float: right;
+
+main > article {
+    background: #eff3f7;
+    min-width: 350px;
+    width: 650px;
+    margin-bottom: 27px;
+    margin-left: 0;
+    margin-right: auto;
 
 }
-main>article {
-  background: #eff3f7;
-  min-width: 350px;
-  width: 650px;
-  margin-bottom: 27px;
-  margin-left: 0;
-  margin-right: auto;
 
+main > article h3 {
+    font-size: 27px;
+    font-family: "Fira Sans Book";
+    color: rgb(59, 168, 192);
+    padding-left: 22px;
+    display: inline-block;
 }
-main>article h3 {
-  font-size: 27px;
-  font-family: "Fira Sans Book";
-  color: rgb(59, 168, 192);
-  padding-left: 22px;
-  display: inline-block;
+
+main > article h3::after {
 }
-main>article h3::after {}
+
 main article dd {
-  font-size: 27px;
-  font-family: "Fira Sans";
-  color: rgb(59, 168, 192);
+    font-size: 27px;
+    font-family: "Fira Sans";
+    color: rgb(59, 168, 192);
 }
+
 .photo {
-  float: left;
-  border: 2px solid #2fa5bd;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: 21px;
+    float: left;
+    border: 2px solid #2fa5bd;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 21px;
 }
+
 .photo img {
-  width: 148px;
-  height: 148px;
+    width: 148px;
+    height: 148px;
 }
+
 main article dt {
-  font-size: 15px;
-  font-family: "Fira Sans";
-  color: rgb(55, 66, 77);
-  line-height: 1.2;
+    font-size: 15px;
+    font-family: "Fira Sans";
+    color: rgb(55, 66, 77);
+    line-height: 1.2;
 }
+
 .skills li {
-  font-family: 'ProximaNova';
-  font-size: 14 pt;
-  padding: 5px;
-  color: #fff;
-  text-align: center;
-  list-style: none;
-  display: inline-block;
-  height: 17px;
-  min-width: 40px;
-  margin: 8px;
-  border-radius: 2px;
-  background-image: -moz-linear-gradient( 90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+    font-family: 'ProximaNova';
+    font-size: 14pt;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    height: 17px;
+    min-width: 40px;
+    margin: 8px;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient(90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(46, 140, 162) 0%, rgb(46, 140, 162) 52%, rgb(59, 168, 192) 53%, rgb(59, 168, 192) 100%);
 }
 
 /* FOOTER */
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 78px;
-  width: 100%;
-  font-size: 13px;
-  font-family: "Fira Sans Light";
-  color: rgb(74, 84, 93);
-  line-height: 1.2;
-  text-align: center;
+.page-footer {
+    font-size: 13px;
+    font-family: "Fira Sans Light";
+    color: rgb(74, 84, 93);
+    line-height: 1.2;
+    text-align: center;
 }
-#login_link {
-  position: absolute;
-  top: 26px;
-  left: 20px;
-  width: 22px;
-  height: 32px;
-  background: url(img/unlogged.png);
+
+.login_link {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+    width: 22px;
+    height: 32px;
+    background: url(img/unlogged.png);
 }
-#login_link:hover {
-  background: url(img/logged.png);
+
+.login_link:hover {
+    background: url(img/logged.png);
 }
 
 /*
@@ -211,12 +176,13 @@ footer {
 }
 */
 
+/* Градиентные полосы*/
 footer::before, header::after {
-  content: '';
-  background-image: -moz-linear-gradient( 0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
-  background-image: -webkit-linear-gradient( 0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
-  background-image: -ms-linear-gradient( 0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
-  position: absolute;
-  width: 100%;
-  height: 3px;
+    content: '';
+    background-image: -moz-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
+    position: absolute;
+    width: 100%;
+    height: 3px;
 }
