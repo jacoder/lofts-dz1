@@ -20,8 +20,25 @@ html, body {
 /******************/
 
 .page {
-    position: relative; /**ja  let contain absolute-positioned elements */
+    /*position: relative; /!**ja  let contain absolute-positioned elements *!/*/
     max-width: 1120px; /**ja todo fix to real */
+  min-height: 100%;
+/* equal to footer height */
+	margin-bottom: -78px;
+
+    /** debugging **/
+    content: '.';
+    background-color: red;
+}
+.page:after {
+  content: "";
+  display: block;
+}
+
+
+.page-footer, .page:after {
+  /* .push must be the same height as footer */
+	height: 142px;
 }
 
 /** HEADER **/
@@ -91,7 +108,8 @@ nav.social {
 
 }
 
-/** MAIN CONTENT **/
+
+/**  MAIN CONTENT  **/
 
 .main {
     position: absolute;
@@ -103,17 +121,24 @@ nav.social {
 
 }
 
-/** FOOTER **/
+
+/**  FOOTER  **/
 .page-footer {
-    position: absolute;
+
+    /*position: absolute;    ja todo why-where?*/
+    /*top-margin:100%;*/
+    /*position: absolute;*/
     left: 0;
-    bottom: 0;
+    bottom: 0px;
     height: 78px;
     width: 100%;
+
+    /** debugging **/
+    background-color: #006600;
 }
 
 .admin_door {
-    position: absolute;
+    position: relative;
     top: 26px;
     left: 20px;
     width: 22px;
@@ -124,6 +149,12 @@ nav.social {
 .login_link {
 
 }
+
+
+.disclaimer{
+
+}
+
 
 /** UTILITIES **/
 .clearfix:before, .clearfix:after {

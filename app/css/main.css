@@ -30,6 +30,7 @@ ul {
 
 .page-header {
     background-color: #eff3f7;
+    padding: 40px 0;
 }
 
 .logo {
@@ -170,7 +171,7 @@ main article dt {
 */
 
 /* Градиентные полосы*/
-footer::before, header::after {
+.page-footer::before, .pageheader::after {
     content: '';
     background-image: -moz-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
     background-image: -webkit-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
