@@ -26,6 +26,11 @@ var paths = {
 //  })
 //});
 
+
+///// WATCHER BS
+
+
+
 gulp.task('server', function () {
 
     ///*ja Done according to http://www.browsersync.io/docs/api/index.html#api-watch

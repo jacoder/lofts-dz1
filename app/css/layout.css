@@ -79,8 +79,9 @@ nav.social {
 
 .middle-wrap {
     /*top: 117;*/
+    padding-top: 22px;
     width: 100%;
-
+top: 24px;
     position: relative; /**ja  let contain absolute-positioned elements */
     /*top:3px;*/
     /*position: absolute;*/
@@ -103,6 +104,10 @@ nav.social {
 
 .side-nav {
     margin: 5px; /**ja todo fix to real */
+}
+
+.side-nav li{
+    padding: 5px;
 }
 
 .sidebar-contacts {
