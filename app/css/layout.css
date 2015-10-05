@@ -22,25 +22,24 @@ html, body {
 .page {
     /*position: relative; /!**ja  let contain absolute-positioned elements *!/*/
     /*max-width: 1160px; /!**ja todo fix to real *!/*/
-  min-height: 100%;
-/* equal to footer height */
-	/*margin-bottom: -78px;*/
+    min-height: 100%;
+    /* equal to footer height */
+    /*margin-bottom: -78px;*/
 
     /** debugging **/
     /*content: '.';*/
     /*background-color: red;*/
 }
-.page:after {
-  content: "";
-  display: block;
-}
 
+.page:after {
+    content: "";
+    display: block;
+}
 
 .page-footer, .page:after {
-  /* .push must be the same height as footer */
-	/*height: 142px;*/
+    /* .push must be the same height as footer */
+    /*height: 142px;*/
 }
-
 
 /** HEADER **/
 .page-header {
@@ -61,7 +60,7 @@ nav.social {
 }
 
 /*.social > ul {*/
-    /*width: 213px;*/
+/*width: 213px;*/
 /*}*/
 
 .social li {
@@ -71,8 +70,8 @@ nav.social {
     cursor: pointer;
 }
 
-.page-header .logo{
-       position: absolute;
+.page-header .logo {
+    position: absolute;
     left: 50px;
     top: 36px;
 
@@ -110,7 +109,6 @@ nav.social {
 
 }
 
-
 /**  MAIN CONTENT  **/
 
 .main {
@@ -123,11 +121,35 @@ nav.social {
 
 }
 
-.photo img{
+.photo img {
     /*bottom: -20px;*/
 }
 
+.main h2{
+    padding-left: 22px;
+    /*display: inline-block;*/
+}
 
+.brief dl {
+    width: 100%;
+    /*clear:both;*/
+}
+
+.brief dd {
+    display: inline;
+    width:50%;
+    /*float: left;*/
+}
+
+.brief dt {
+      display: inline-block;
+    /*width: 50%;*/
+}
+
+.brief dd:after {
+    display: block;
+    content: '';
+}
 
 /**  FOOTER  **/
 .page-footer {
@@ -158,13 +180,11 @@ nav.social {
 
 }
 
-
-.disclaimer{
+.disclaimer {
     position: relative;
     top: 26px;
 
 }
-
 
 /** UTILITIES **/
 .clearfix:before, .clearfix:after {

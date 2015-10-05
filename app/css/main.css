@@ -107,16 +107,33 @@ main > article {
 
 }
 
-main > article h3 {
+.main > article h2 {
     font-size: 27px;
     font-family: "Fira Sans Book";
     color: rgb(59, 168, 192);
-    padding-left: 22px;
-    display: inline-block;
+
 }
 
-main > article h3::after {
+main > article h2::after {
 }
+
+
+
+.brief   dt {
+    font-size: 15px;
+    font-family: "Fira Sans";
+    font-weight: 500;
+    color: rgb(55, 66, 77);
+    line-height: 1.2;
+    /*font: "Fira Sans Book" 600 15;*/
+}
+.brief   dd {
+    font-size: 15px;
+    font-family: "Fira Sans";
+    color: rgb(55, 66, 77);
+    line-height: 1.2;
+}
+
 
 main article dd {
     font-size: 27px;
@@ -137,12 +154,7 @@ main article dd {
     height: 148px;
 }
 
-main article dt {
-    font-size: 15px;
-    font-family: "Fira Sans";
-    color: rgb(55, 66, 77);
-    line-height: 1.2;
-}
+/*main article */
 
 .skills li {
     font-family: 'ProximaNova';

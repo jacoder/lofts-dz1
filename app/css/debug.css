@@ -1,11 +1,25 @@
 
 
-.page {   /** debugging **/
-    content: '.';
-    background-color: red;
-}
+/*.page {   /!** debugging **!/*/
+    /*content: '.';*/
+    /*background-color: red;*/
+/*}*/
 
-.page-footer {
-        /** debugging **/
-    background-color: #006600;
+/*.page-footer {*/
+        /*/!** debugging **!/*/
+    /*background-color: #006600;*/
+/*}*/
+
+.social li a {
+    /*display: none;*/
+}
+.text-hide {
+    text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+    /* другой варик*/
+    /*font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;*/
 }
