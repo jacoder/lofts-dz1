@@ -1,58 +1,107 @@
-.page {
-    position: relative; /**ja  let contain absolute-positioned elements */
+/************************/
+/*                      */
+/*  Vertical centering  */
+/*     ja todo exp      */
+/************************/
+
+html, body {
+    height: 100%;
+    /*margin: 0;*/
 }
 
+/*body {*/
+/*position: relative;*/
+/*-webkit-align-items: center;*/
+/*-ms-flex-align: center;*/
+/*align-items: center;*/
+/*display: -webkit-flex;*/
+/*display: flex;*/
+/*}*/
+/******************/
+
+.page {
+    position: relative; /**ja  let contain absolute-positioned elements */
+    max-width: 1120px; /**ja todo fix to real */
+}
 
 /** HEADER **/
 .page-header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 116px;
     width: 100%;
 }
 
-
-.middle-wrap{
-        top: 117;
-        width: 100%;
-
+nav.social {
     position: absolute;
-    margin:  0 auto;
-        /*position: relative; /!**ja  let contain absolute-positioned elements *!/*/
-    padding-left: 250px;
+    right: 0;
+    top: 36px;
+    /*width:100%;*/
+    width:213px;
+
 }
 
+.social > ul {
+    width: 213px;
+}
+
+.social li {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.page-header .logo{
+       position: absolute;
+    left: 50px;
+    top: 36px;
+
+}
+
+.middle-wrap {
+    /*top: 117;*/
+    width: 100%;
+
+    position: relative; /**ja  let contain absolute-positioned elements */
+    /*position: absolute;*/
+    margin: 0 auto;
+
+    /*padding-left: 250px;*/
+}
 
 /** SIDEBAR **/
 
 .sidebar {
-
+    top: 0;
+    left: 0;
+    position: absolute;
     /*background-color: #006600;*/
     width: 250px;
     /*float: left;*/
     /*clear: right;*/
 }
 
-
-.side-nav{
+.side-nav {
     margin: 5px; /**ja todo fix to real */
 }
 
-.sidebar-contacts{
+.sidebar-contacts {
 
 }
-
 
 /** MAIN CONTENT **/
 
 .main {
+    position: absolute;
+    top: 0;
+    left: 251px;
     width: 960px;
     /*margin: 39px auto 39px;*/
     /*float: right;*/
 
 }
-
 
 /** FOOTER **/
 .page-footer {
@@ -62,7 +111,6 @@
     height: 78px;
     width: 100%;
 }
-
 
 .admin_door {
     position: absolute;
@@ -74,7 +122,6 @@
 }
 
 .login_link {
-
 
 }
 

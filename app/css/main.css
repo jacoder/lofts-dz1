@@ -1,7 +1,6 @@
 /* General & body*/
 
 html {
-    position: relative;
     min-height: 100%;
 }
 
@@ -38,25 +37,19 @@ ul {
     display: inline;
 }
 
-nav.social {
-    /*position: absolute;*/
-    right: 0;
-    top: 36px;
+ul.social li i {
+    color: #fff;
+    font-size: 26px;
 }
 
-.social > ul {
-    width: 213px;
+ul.social li:hover {
+    background-color: #3ba8c0;
 }
 
-.social li {
-    display: inline-block;
-    width: 46px;
-    height: 46px;
-}
 
-.social li.vk {
-    background-image: url();
-}
+/*.social li.vk {*/
+    /*background-image: url();*/
+/*}*/
 
 /* SIDEBAR */
 

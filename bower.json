@@ -1,7 +1,9 @@
 {
   "name": "dz1",
   "version": "1",
-  "authors": ["Oleg Leontiev"],
+  "authors": [
+    "Oleg Leontiev"
+  ],
   "description": "homework #1 for Loftschool-web-092015",
   "main": "index.html",
   "license": "MIT",
@@ -16,6 +18,7 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "modernizer": "~2.8.2",
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "font-awesome": "~4.4.0"
   }
 }
