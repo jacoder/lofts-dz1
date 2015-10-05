@@ -30,7 +30,7 @@ ul {
 
 .page-header {
     background-color: #eff3f7;
-    padding: 40px 0;
+    padding: 0 40px ;
 }
 
 .logo {
@@ -38,12 +38,29 @@ ul {
     display: inline;
 }
 
-ul.social li i {
-    color: #fff;
-    font-size: 26px;
+.social li
+/*:not(:last-child) */
+{
+    display: inline-block;
+    margin-right: 25px;
+    width: 47px;
+    height: 47px;
+    background-color: #58697a;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 54px;
+    cursor: pointer;
+}
+.social li i:last-child{
+
 }
 
-ul.social li:hover {
+.social li i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.social li:hover {
     background-color: #3ba8c0;
 }
 
@@ -56,6 +73,12 @@ ul.social li:hover {
 
 aside {
     word-break: break-all;
+}
+
+
+.side-nav .active {
+    background-color: #3ba8c0;
+    color: #fff;
 }
 
 
@@ -150,15 +173,16 @@ main article dt {
 
 .login_link {
     position: absolute;
+    /*display: block;*/
     top: 26px;
     left: 20px;
     width: 22px;
     height: 32px;
-    background: url(img/unlogged.png);
+    background: url(../img/unlogged.png);
 }
 
 .login_link:hover {
-    background: url(img/logged.png);
+    background: url(../img/logged.png);
 }
 
 /*
@@ -171,7 +195,7 @@ main article dt {
 */
 
 /* Градиентные полосы*/
-.page-footer::before, .pageheader::after {
+.page-footer::before, .page-header::after {
     content: '';
     background-image: -moz-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);
     background-image: -webkit-linear-gradient(0deg, rgb(28, 102, 122) 0%, rgb(246, 250, 254) 0%, rgb(216, 216, 216) 0%, rgb(242, 246, 250) 0%, rgb(135, 174, 186) 28%, rgb(28, 102, 122) 48%, rgb(135, 174, 186) 71%, rgb(242, 246, 250) 100%);

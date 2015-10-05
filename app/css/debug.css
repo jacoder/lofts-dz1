@@ -1,0 +1,11 @@
+
+
+.page {   /** debugging **/
+    content: '.';
+    background-color: red;
+}
+
+.page-footer {
+        /** debugging **/
+    background-color: #006600;
+}
