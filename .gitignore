@@ -2,6 +2,8 @@ misc
 bower_components
 node_modules
 *.iml
+sources/jade/**/*.html
+dist
 
 ## Directory-based project format:
 .idea/

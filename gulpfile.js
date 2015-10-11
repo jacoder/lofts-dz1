@@ -20,7 +20,7 @@ var paths = {
 
 //gulp.task('connect', function() {
 //  connect.server({
-//    // root:'app',
+//    // root:'sources',
 //    root: root,
 //    livereload: true
 //  })
@@ -34,8 +34,8 @@ var paths = {
 gulp.task('server', function () {
 
     ///*ja Done according to http://www.browsersync.io/docs/api/index.html#api-watch
-    bs.watch("app/*.html").on("change", bs.reload);
-    bs.watch("app/css/*.css", function (event, file) {
+    bs.watch("sources/*.html").on("change", bs.reload);
+    bs.watch("sources/css/*.css", function (event, file) {
     if (event === "change") {
         bs.reload("*.css");
     }
@@ -54,12 +54,12 @@ gulp.task('server', function () {
 //// Build
 
 gulp.task('css', function () {
-    gulp.src('app/css/*.css')
+    gulp.src('sources/css/*.css')
         .pipe(concatCSS("bundle.css"))
         // .pipe(minifyCSS("bundle.css"))
         .pipe(minifyCSS(''))
         .pipe(rename("bundle.min.css"))
-        .pipe(gulp.dest("app/css"))
+        .pipe(gulp.dest("sources/css"))
         .pipe(connect.reload())
 
         // .pipe(livereload())
@@ -80,14 +80,14 @@ gulp.task('watch', function () {
 
 // ja Не работает Finished 'watch' after 27 ms
 //  gulp.watch([
-//      'app/*.html',
-//      'app/js/**/*.js',
-//      'app/сss/**/*.css'
+//      'sources/*.html',
+//      'sources/js/**/*.js',
+//      'sources/сss/**/*.css'
 //    ])
 //    .on('change', bs.reload);
 
 //gulp.watch(paths.styles).on('change',bs.reload);
-    gulp.watch('app/сss/**/*.css').on('change', bs.reload);
+    gulp.watch('sources/сss/**/*.css').on('change', bs.reload);
 
     // gulp.watch('css/*.css',['css']);
     // gulp.watch('index.html',['html']);
