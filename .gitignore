@@ -4,7 +4,9 @@ node_modules
 *.iml
 sources/jade/**/*.html
 dist
-
+!sources/jade/includes/\_\_*.html
+!sources/index2.html
+sources/*.html
 ## Directory-based project format:
 .idea/
 # if you remove the above rule, at least ignore the following:

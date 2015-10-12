@@ -9,7 +9,7 @@ var bs = require('browser-sync').create('DZ1 server');
 var useref = require('gulp-useref');
 var plumber = require('gulp-plumber');
 
-var root = 'app';   ///*ja server root path
+var root = 'sources';   ///*ja server root path
 var paths = {
     index: '/index.html'
     //,root:
