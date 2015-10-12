@@ -7,29 +7,116 @@
   <head>
     <meta charset="UTF-8">
     <meta http-eqiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Oleg Leontiev">
     <link rel="styleSheet" media="all" type="text/css" href="css/main.css">
     <script src="bower_components/modernizer/modernizr.js"></script>
-    <title></title>    <!-- FavIcons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/img/favicons/manifest.json">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="msapplication-TileColor" content="#daf02c">
-    <meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#daf02c">
-    <!-- ^FavIcons -->
+    <title>Главная</title>
+<!-- FavIcons -->
+<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/img/favicons/manifest.json">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#daf02c">
+<meta name="msapplication-TileImage" content="/img/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#daf02c">
+<!-- ^FavIcons -->
 
+    <!--vendor CSS-->
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- custom styles-->
+    <link rel="styleSheet" media="all" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
   </head>
   <body>
+    <div class="page">
+      <!--Created by oleg on 12/10/15.
+      -->
+      <!--Created by oleg on 12/10/15.
+      -->
+      <nav class="side-nav">
+        <ul>
+          <li><a href="/">Обо мне</a></li>
+          <li><a href="/my-works.html">Мои работы</a></li>
+          <li><a href="/my-works.html">Связаться со мной</a></li>
+        </ul>
+      </nav>
+      <!--Created by oleg on 12/10/15.
+      -->
+      <address class="sidebar-contacts">
+        <h4>Контакты</h4>
+        <ul class="contactsList">
+        <li class="email"><a href="mailto:leontievos@yandex.ru">LeontievOS@yandex.ru</a></li>
+        <li class="phone"><a href="tel:+78000000000">+7 917 8123 XXX</a></li>
+        <li class="skype"><a href="skype:oleg_leontiev?call">oleg_leontiev</a></li>
+        </ul>
+      </address>
+      <main class="main">
+        <article class="basic">
+          <h2>Вкратце</h2>
+          <figure class="photo"><img src="./img/photo.jpg" alt="моё фото"></figure>
+        </article>
+        <dl class="brief">
+          <dt>Меня зовут</dt>
+          <dd>Леонтьев Олег</dd>
+          <dt>Мой возраст</dt>
+          <dd>35 лет</dd>
+          <dt>Мой город</dt>
+          <dd>Самара</dd>
+          <dt>Моя специализация</dt>
+          <dd>Frontend разработчик</dd>
+          <dt>Ключевые навыки</dt>
+          <dd></dd>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>javascript</li>
+            <li>jQuery</li>
+            <li>git</li>
+            <li>Gulp</li>
+            <li>jade</li>
+          </ul>
+        </dl>
+        <article id="career">
+          <h2>Опыт</h2>
+          <ul> 
+            <li class="job"><span class="firm">ОАО &laquo;ТрансКонтейнер&raquo; &mdash;</span><span class="appointment">Начальник ИТ сектора</span>
+              <div class="timespan"> Февраль 2011 &ndash; Декабрь 2013</div>
+            </li>
+            <li class="job"><span class="firm">разные конторы &mdash;</span><span class="appointment">инженер-программист, ведущий разработчик</span>
+              <div class="timespan">Май 2002 &ndash; Май 2009</div>
+            </li>
+          </ul>
+        </article>
+        <article id="education">
+          <h2>Образование</h2>
+          <ul>
+            <li><span class="firm"><a href="https://www.psuti.ru" target="_blank">ПовГАТИ</a></span>
+              <div class="timespan">1997 &ndash; 2002</div>
+            </li>
+            <li><a href="http://www.loftschool.com" target="_blank Loftschool.ru">курсы</a>
+              <div class="timespan">Сентябрь 2015 &ndash; Ноябрь 2015</div>
+            </li>
+          </ul>
+        </article>
+      </main>
+      <!--Created by oleg on 12/10/15.
+      -->
+      <footer class="page-footer">
+        <div class="admin_door"><a id="login_link" href="login.php" title="Админка" alt="Войти"></a></div>
+        <div class="copyright">&copy; 2015 Это мой сайт, пожалуйста, не копируйте его</div>
+      </footer>
+    </div>
   </body>
 </html>

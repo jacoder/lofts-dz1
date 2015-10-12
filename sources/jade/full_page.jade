@@ -3,5 +3,11 @@
 
 extends base
 
+block PageContent
+   include includes/_page-header
+   include includes/_nav-block
+   include includes/_contacts-block
+   main.main
+      block MainContent
 
-footer
+   include includes/_footer

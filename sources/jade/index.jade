@@ -1,4 +1,57 @@
-//
-   Created by oleg on 12/10/15.
-
 extends full_page
+block PageTitle
+   Главная
+
+block MainContent
+   article.basic
+      h2 Вкратце
+      figure.photo
+         img(src="./img/photo.jpg", alt="моё фото")
+   dl.brief
+      dt Меня зовут
+      dd Леонтьев Олег
+      dt Мой возраст
+      dd 35 лет
+      dt Мой город
+      dd Самара
+      dt Моя специализация
+      dd Frontend разработчик
+      dt Ключевые навыки
+      dd
+      ul.skills
+         li HTML
+         li CSS
+         li javascript
+         li jQuery
+         li git
+         li Gulp
+         li jade
+
+
+   article#career
+      h2 Опыт
+      ul 
+         li.job
+            span.firm ОАО &laquo;ТрансКонтейнер&raquo; &mdash;
+            span.appointment Начальник ИТ сектора
+            div.timespan  Февраль 2011 &ndash; Декабрь 2013
+
+         li.job
+            span.firm разные конторы &mdash;
+            span.appointment инженер-программист, ведущий разработчик
+            div.timespan Май 2002 &ndash; Май 2009
+
+
+   article#education
+      h2 Образование
+      ul
+         li
+            span.firm
+               a(href="https://www.psuti.ru",  target="_blank") ПовГАТИ
+            div.timespan 1997 &ndash; 2002
+
+         li
+            a(href="http://www.loftschool.com", target="_blank Loftschool.ru")курсы
+            div.timespan Сентябрь 2015 &ndash; Ноябрь 2015
+
+
