@@ -7,6 +7,9 @@ dist
 !sources/jade/includes/\_\_*.html
 !sources/index2.html
 sources/*.html
+##ja local file for experiments with different syntaxes
+*-try.*
+
 ## Directory-based project format:
 .idea/
 # if you remove the above rule, at least ignore the following:
